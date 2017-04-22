@@ -3,9 +3,40 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		link(rel="stylesheet", href="css/reset.css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet")
+
+		link(rel="stylesheet", href="")
+		link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
+		link(rel="stylesheet", href="vendor/slick-slider/bootstrap.css")
+		link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
 		link(rel="stylesheet", href="css/style.css")
-		title= title
+		title EXAM 6
 	body
+		header.header
+			.container
+				a.header__logo(href="#")
+					img(src="images/logo.png" width="145" height="30" alt="Escape-logo")
+				nav.header__menu
+					a.menu__btn(href="")
+						img(src="images/mobile-btn-01.svg" width="47" height="47" alt="mobile-btn")
+					ul.menu__list
+						li.list__item
+							a.item__a(href="#home") Home
+						li.list__item
+							a.item__a(href="#services") Services
+						li.list__item
+							a.item__a(href="#clients") Clients
+						li.list__item
+							a.item__a(href="#team") Team
+						li.list__item
+							a.item__a(href="#contact") Contact
+		section#services.promo
+			.container
+				.promo__slider
+					.slider__item
+						h4.item__title--little Can you build the website of my dreams?
+						h2.item__title--main Yup, we can do that.
+						a.item__btn(href="#") Learn More
 		script(src="vendor/jquery/jquery-3.1.1.min.js")
+		script(src="vendor/slick-slider/slick.min.js")
 		script(src="js/main.js")

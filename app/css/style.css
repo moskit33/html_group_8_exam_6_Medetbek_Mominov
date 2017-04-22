@@ -1,4 +1,255 @@
 body
 {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+
+    color: #000;
     background: #fff;
+}
+
+.container
+{
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header
+{
+    position: absolute;
+    z-index: 25;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 40px 0;
+
+    background: transparent;
+}
+
+.header .header__logo
+{
+    font-size: 25px;
+
+    display: inline-block;
+
+    color: white;
+}
+
+.header .header__logo img
+{
+    display: block;
+
+    width: 145px;
+    height: auto;
+}
+
+.header .header__menu
+{
+    position: relative;
+    top: 0;
+    right: 0;
+
+    display: inline-block;
+    float: right;
+}
+
+.header .header__menu .menu__btn
+{
+    position: relative;
+    top: -36px;
+    right: 0;
+
+    display: block;
+
+    padding: 25px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+}
+
+.header .header__menu .menu__btn img
+{
+    width: 47px;
+    height: auto;
+}
+
+.header .header__menu .menu__btn:hover + .menu__list
+{
+    display: block;
+}
+
+@media screen and (min-width: 720px)
+{
+    .header .header__menu .menu__btn
+    {
+        display: none;
+    }
+}
+
+.header .header__menu .menu__list
+{
+    position: absolute;
+    top: 36px;
+    right: -9px;
+
+    display: none;
+
+    margin: 0;
+    padding: 16px 0 0;
+}
+
+.header .header__menu .menu__list:hover
+{
+    display: block;
+}
+
+@media screen and (min-width: 720px)
+{
+    .header .header__menu .menu__list
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+
+        display: inline-block;
+
+        padding: 4px 0 0;
+
+        background: transparent;
+    }
+}
+
+.header .header__menu .menu__list .list__item
+{
+    font-size: 20px;
+
+    display: block;
+
+    border: 2px solid white;
+    border-bottom: none;
+    background: #29606b;
+}
+
+.header .header__menu .menu__list .list__item:last-child
+{
+    border-bottom: 2px solid white;
+}
+
+@media screen and (min-width: 720px)
+{
+    .header .header__menu .menu__list .list__item:last-child
+    {
+        border-bottom: none;
+    }
+}
+
+.header .header__menu .menu__list .list__item .item__a
+{
+    display: block;
+
+    padding: 15px 40px 15px 40px;
+
+    -webkit-transition: all .6s ease-out;
+            transition: all .6s ease-out;
+
+    color: white;
+}
+
+.header .header__menu .menu__list .list__item .item__a:hover
+{
+    color: #e09520;
+}
+
+.header .header__menu .menu__list .list__item:hover
+{
+    background: #4db5ca;
+}
+
+@media screen and (min-width: 720px)
+{
+    .header .header__menu .menu__list .list__item
+    {
+        font-size: 17px;
+
+        display: inline-block;
+
+        border: none;
+        background: transparent;
+    }
+    .header .header__menu .menu__list .list__item:hover
+    {
+        background: transparent;
+    }
+    .header .header__menu .menu__list .list__item .item__a
+    {
+        padding: 0 0 0 35px;
+    }
+}
+
+.promo
+{
+    padding: 226px 0 120px;
+
+    text-align: center;
+
+    color: white;
+    background: url(../uploads/promo-slider.jpg) 0 0 no-repeat;
+}
+
+.promo .promo__slider
+{
+    display: block;
+}
+
+.promo .promo__slider .slider__item
+{
+    display: block;
+}
+
+.promo .promo__slider .slider__item .item__title--little
+{
+    font-size: 28px;
+    font-weight: 300;
+
+    display: block;
+}
+
+.promo .promo__slider .slider__item .item__title--main
+{
+    font-size: 66px;
+    font-weight: 700;
+
+    display: block;
+
+    text-transform: uppercase;
+}
+
+.promo .promo__slider .slider__item .item__btn
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    display: inline-block;
+
+    padding: 20px 60px;
+
+    -webkit-transition: all .75s ease-out;
+            transition: all .75s ease-out;
+
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.promo .promo__slider .slider__item .item__btn:hover
+{
+    background: rgba(224, 149, 32, .73);
 }

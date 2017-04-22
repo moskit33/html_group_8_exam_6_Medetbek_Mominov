@@ -4,13 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="vendor/slick-slider/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello world</title>
+    <title>EXAM 6</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <a class="header__logo" href="#">
+                <img src="images/logo.png" width="145" height="30" alt="Escape-logo">
+            </a>
+            <nav class="header__menu">
+                <a class="menu__btn" href="">
+                    <img src="images/mobile-btn-01.svg" width="47" height="47" alt="mobile-btn">
+                </a>
+                <ul class="menu__list">
+                    <li class="list__item"><a class="item__a" href="#home">Home</a>
+                    </li>
+                    <li class="list__item"><a class="item__a" href="#services">Services</a>
+                    </li>
+                    <li class="list__item"><a class="item__a" href="#clients">Clients</a>
+                    </li>
+                    <li class="list__item"><a class="item__a" href="#team">Team</a>
+                    </li>
+                    <li class="list__item"><a class="item__a" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="promo" id="services">
+        <div class="container">
+            <div class="promo__slider">
+                <div class="slider__item">
+                    <h4 class="item__title--little">Can you build the website of my dreams?</h4>
+                    <h2 class="item__title--main">Yup, we can do that.</h2><a class="item__btn" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+    <script src="vendor/slick-slider/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
