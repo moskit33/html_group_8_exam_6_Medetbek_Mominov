@@ -499,10 +499,21 @@ body
 {
     width: 180px;
     height: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 760px)
+{
+    .logos__block .logos__wrap .logos__item
+    {
+        margin-bottom: 0;
+    }
 }
 
 .team
 {
+    padding: 87px 0 112px;
+
     color: #fff;
     background: #000;
 }
@@ -570,8 +581,9 @@ body
 
 .team .team__wrap .team__item .item__avatar
 {
-    width: 225px;
-    height: 225px;
+    width: 235px;
+    height: 235px;
+    margin: 75px 0 20px;
 
     border: 7px solid #fff;
     border-radius: 50%;
@@ -600,15 +612,37 @@ body
 
 .team .team__wrap .team__item .social__wrap .social__icon
 {
+    position: relative;
+
     display: inline-block;
 
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     margin: 0 5px;
+    margin-top: 10px;
+
+    -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
 
     border: 3px solid #fff;
     border-radius: 50%;
     background: transparent;
+}
+
+.team .team__wrap .team__item .social__wrap .social__icon:hover
+{
+    background: #e09520;
+}
+
+.team .team__wrap .team__item .social__wrap .social__icon .icon__item
+{
+    font-size: 18px;
+
+    position: absolute;
+    top: 24%;
+    left: 28%;
+
+    color: #fff;
 }
 
 .team .team__text
@@ -616,7 +650,105 @@ body
     font-size: 16px;
 
     box-sizing: border-box;
-    padding: 0 150px;
+    margin-top: 45px;
+    padding: 0;
 
     text-align: center;
+}
+
+@media screen and (min-width: 600px)
+{
+    .team .team__text
+    {
+        padding: 0 150px;
+    }
+}
+
+.contact
+{
+    padding: 92px 0;
+
+    color: #fff;
+    background: #7690c5;
+}
+
+.contact .contact__wrap
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+}
+
+.contact .contact__wrap .info__wrap
+{
+    width: 100%;
+    min-width: 470px;
+}
+
+.contact .contact__wrap .info__wrap .contact__title__block
+{
+    text-align: left;
+}
+
+.contact .contact__wrap .info__wrap .contact__title__block .block__title
+{
+    font-size: 54px;
+    font-weight: 300;
+}
+
+.contact .contact__wrap .info__wrap .contact__title__block::after
+{
+    font-weight: 700;
+
+    content: ' Team';
+}
+
+.contact .contact__wrap .info__wrap .contact__title__block .block__text
+{
+    font-size: 20px;
+
+    color: #777;
+}
+
+.contact .contact__wrap .info__wrap .info
+{
+    width: 50%;
+}
+
+.contact .contact__wrap .info__wrap .info .info__item
+{
+    display: block;
+}
+
+.contact .contact__wrap .contact__form__wrap
+{
+    width: 100%;
+    min-width: 470px;
+}
+
+.contact .contact__wrap .contact__form__wrap .contact__form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.contact .contact__wrap .contact__form__wrap .contact__form input
+{
+    width: 100%;
+    max-width: 455px;
+
+    color: #777;
+    border: 2px solid #777;
+    border-radius: 3px;
 }
