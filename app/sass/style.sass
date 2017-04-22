@@ -101,7 +101,7 @@ body
             padding: 0 0 0 35px
 
 .promo
-  background: url(../uploads/promo-slider.jpg) 0 0 no-repeat
+  background: url(../uploads/promo-slider.jpg) 0 0/cover no-repeat
   text-align: center
   padding: 226px 0 120px
   color: white
@@ -195,7 +195,7 @@ body
     display: flex
     flex-direction: column
     justify-content: space-between
-    margin-bottom: 22px
+    margin: 43px 0 22px
     @media screen and (min-width: 635px)
       flex-direction: row
     .clients__avatar
@@ -241,12 +241,15 @@ body
     flex-direction: row
     justify-content: space-around
     flex-wrap: wrap
+    align-items: center
     .logos__item
-      height: auto
-      width: 180px
+
       margin-bottom: 10px
       @media screen and (min-width: 760px)
         margin-bottom: 0
+      .item__picture
+        height: auto
+        width: auto
 
 .team
   background: #000
@@ -322,7 +325,7 @@ body
   .contact__wrap
     display: flex
     flex-direction: column
-    flex-wrap: wrap
+    //flex-wrap: wrap
     @media screen and (min-width: 480px)
       flex-direction: row
     .info__wrap
@@ -333,12 +336,12 @@ body
         .block__title
           font-size: 54px
           font-weight: 300
-        &::after
-          content: ' Team'
-          font-weight: 700
+          &::after
+            content: ' Hello'
+            font-weight: 700
         .block__text
           font-size: 20px
-          color: #777777
+          //color: #777777
       .info
         width: 50%
         .info__item
@@ -350,9 +353,10 @@ body
         display: flex
         flex-direction: column
         flex-wrap: wrap
-        input
+        font-size: 16px
+        .form__name, .form__email, .form__message
           width: 100%
           max-width: 455px
-          border: 2px solid #777777
-          border-radius: 3px
+          border: 1px solid #c2c5cb
+          border-radius: 2px
           color: #777777

@@ -200,7 +200,7 @@ body
     text-align: center;
 
     color: white;
-    background: url(../uploads/promo-slider.jpg) 0 0 no-repeat;
+    background: url(../uploads/promo-slider.jpg) 0 0/cover no-repeat;
 }
 
 .promo .promo__slider
@@ -393,7 +393,7 @@ body
     display: flex;
         flex-direction: column;
 
-    margin-bottom: 22px;
+    margin: 43px 0 22px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -493,12 +493,13 @@ body
     justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .logos__block .logos__wrap .logos__item
 {
-    width: 180px;
-    height: auto;
     margin-bottom: 10px;
 }
 
@@ -508,6 +509,12 @@ body
     {
         margin-bottom: 0;
     }
+}
+
+.logos__block .logos__wrap .logos__item .item__picture
+{
+    width: auto;
+    height: auto;
 }
 
 .team
@@ -682,8 +689,6 @@ body
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
 }
 
 @media screen and (min-width: 480px)
@@ -715,18 +720,16 @@ body
     font-weight: 300;
 }
 
-.contact .contact__wrap .info__wrap .contact__title__block::after
+.contact .contact__wrap .info__wrap .contact__title__block .block__title::after
 {
     font-weight: 700;
 
-    content: ' Team';
+    content: ' Hello';
 }
 
 .contact .contact__wrap .info__wrap .contact__title__block .block__text
 {
     font-size: 20px;
-
-    color: #777;
 }
 
 .contact .contact__wrap .info__wrap .info
@@ -747,6 +750,8 @@ body
 
 .contact .contact__wrap .contact__form__wrap .contact__form
 {
+    font-size: 16px;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -759,12 +764,14 @@ body
         flex-wrap: wrap;
 }
 
-.contact .contact__wrap .contact__form__wrap .contact__form input
+.contact .contact__wrap .contact__form__wrap .contact__form .form__name,
+.contact .contact__wrap .contact__form__wrap .contact__form .form__email,
+.contact .contact__wrap .contact__form__wrap .contact__form .form__message
 {
     width: 100%;
     max-width: 455px;
 
     color: #777;
-    border: 2px solid #777;
-    border-radius: 3px;
+    border: 1px solid #c2c5cb;
+    border-radius: 2px;
 }
