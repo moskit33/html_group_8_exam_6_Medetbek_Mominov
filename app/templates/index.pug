@@ -4,13 +4,12 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet")
-
-		link(rel="stylesheet", href="")
+		link(rel="stylesheet", href="css/reset.css")
 		link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
-		link(rel="stylesheet", href="vendor/slick-slider/bootstrap.css")
-		link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
+		link(rel="stylesheet", href="vendor/slick-slider/slick.css")
+		link(rel="stylesheet", href="vendor/slick-slider/slick-theme.css")
 		link(rel="stylesheet", href="css/style.css")
-		title EXAM 6
+		title Escape
 	body
 		header.header
 			.container
@@ -30,13 +29,68 @@ html(lang="en")
 							a.item__a(href="#team") Team
 						li.list__item
 							a.item__a(href="#contact") Contact
-		section#services.promo
+		section#home.promo
 			.container
 				.promo__slider
 					.slider__item
 						h4.item__title--little Can you build the website of my dreams?
 						h2.item__title--main Yup, we can do that.
 						a.item__btn(href="#") Learn More
+		section#services.services
+			.container
+				.row
+					.services__wrap
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title Branding & Identity
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title Web & Graphic Design
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title Mobile App Development
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title Animations
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title UI/UX
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+						.services__block
+							a.block__icon(href="#")
+							.text__block
+								h5.block__title Photography
+								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+
+		section#clients.clients
+			.container
+				.clients__title__block
+					h3.block__title Awesome
+					p.block__text See what nice things our clients said about us.
+				.clients__wrap
+					img.clients__avatar(src="uploads/client_icon_1.jpg", alt="client" width="225" height="225")
+					.clients__text__block
+						p.block__text “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
+						a.block__name(href="#") - Jamie Richardson, Founder of Cocoa Media
+				.clients__wrap
+					.clients__text__block
+						p.block__text “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
+						a.block__name(href="#") - Bart Thompson, Founder of Rainel
+					img.clients__avatar(src="uploads/client_icon_2.jpg", alt="client" width="225" height="225")
+
+		section#team.team
+			.container
+		section#contact.contact
+			.container
 		script(src="vendor/jquery/jquery-3.1.1.min.js")
 		script(src="vendor/slick-slider/slick.min.js")
 		script(src="js/main.js")

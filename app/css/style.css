@@ -219,6 +219,8 @@ body
     font-weight: 300;
 
     display: block;
+
+    margin-bottom: 23px;
 }
 
 .promo .promo__slider .slider__item .item__title--main
@@ -227,6 +229,8 @@ body
     font-weight: 700;
 
     display: block;
+
+    margin-bottom: 66px;
 
     text-transform: uppercase;
 }
@@ -238,10 +242,10 @@ body
 
     display: inline-block;
 
-    padding: 20px 60px;
+    padding: 17px 60px;
 
-    -webkit-transition: all .75s ease-out;
-            transition: all .75s ease-out;
+    -webkit-transition: all .2s ease-out;
+            transition: all .2s ease-out;
 
     color: white;
     border: 2px solid white;
@@ -251,5 +255,205 @@ body
 
 .promo .promo__slider .slider__item .item__btn:hover
 {
+    font-size: 24px;
+
+    padding: 17px 68px;
+
     background: rgba(224, 149, 32, .73);
+}
+
+.services
+{
+    display: block;
+
+    padding: 87px 0 50px;
+
+    background: #fff;
+}
+
+.services .services__wrap
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.services .services__wrap .services__block
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 100%;
+    max-width: 465px;
+    margin-bottom: 60px;
+    padding-left: 0;
+
+    color: black;
+    background: white;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 720px)
+{
+    .services .services__wrap .services__block
+    {
+        padding-left: 55px;
+    }
+}
+
+.services .services__wrap .services__block .block__icon
+{
+    display: block;
+    float: left;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    background-color: black;
+}
+
+.services .services__wrap .services__block .text__block
+{
+    float: right;
+
+    width: 100%;
+    max-width: 320px;
+}
+
+.services .services__wrap .services__block .text__block .block__title
+{
+    font-size: 20px;
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+.services .services__wrap .services__block .text__block .block__p
+{
+    font-size: 16px;
+
+    display: inline-block;
+}
+
+.clients
+{
+    padding: 100px 0 80px;
+
+    background: #fafafa;
+}
+
+.clients .clients__title__block
+{
+    text-align: center;
+}
+
+.clients .clients__title__block .block__title
+{
+    font-size: 54px;
+    font-weight: 300;
+}
+
+.clients .clients__title__block .block__title::after
+{
+    font-weight: 700;
+
+    content: ' Clients';
+}
+
+.clients .clients__title__block .block__text
+{
+    font-size: 20px;
+
+    color: #777;
+}
+
+.clients .clients__wrap
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    margin-bottom: 22px;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.clients .clients__wrap .clients__avatar
+{
+    width: 225px;
+    height: 225px;
+
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.clients .clients__wrap .clients__text__block
+{
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 655px;
+    margin-top: 22px;
+    padding: 40px 80px;
+
+    border: 2px solid #f3f3f3;
+    border-radius: 2px;
+    background: white;
+}
+
+.clients .clients__wrap .clients__text__block::before
+{
+    position: absolute;
+    top: 48%;
+    left: -2px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 13.5px 25px 13.5px 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.clients .clients__wrap .clients__text__block .block__text
+{
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+
+    color: #777;
+}
+
+.clients .clients__wrap .clients__text__block .block__name
+{
+    font-size: 16px;
+
+    color: #7690c5;
 }
