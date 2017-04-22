@@ -45,7 +45,7 @@ body
 {
     display: block;
 
-    width: 145px;
+    width: 140px;
     height: auto;
 }
 
@@ -727,18 +727,16 @@ body
     content: ' Hello';
 }
 
-.contact .contact__wrap .info__wrap .contact__title__block .block__text
-{
-    font-size: 20px;
-}
-
 .contact .contact__wrap .info__wrap .info
 {
     width: 50%;
+    max-width: 50%;
 }
 
 .contact .contact__wrap .info__wrap .info .info__item
 {
+    font-size: 16px;
+
     display: block;
 }
 
@@ -770,6 +768,11 @@ body
 {
     width: 100%;
     max-width: 455px;
+    max-height: 210px;
+    margin-bottom: 27px;
+    padding: 15px 17px;
+
+    resize: none;
 
     color: #777;
     border: 1px solid #c2c5cb;

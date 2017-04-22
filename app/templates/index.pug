@@ -15,7 +15,7 @@ html(lang="en")
 		header.header
 			.container
 				a.header__logo(href="#")
-					img(src="images/logo.png" width="145" height="30" alt="Escape-logo")
+					img(src="images/logotype.svg" width="140" height="28" alt="Escape-logo")
 				nav.header__menu
 					a.menu__btn(href="")
 						img(src="images/mobile-btn-01.svg" width="47" height="47" alt="mobile-btn")
@@ -154,9 +154,9 @@ html(lang="en")
 							li.info__item pinterest.com/escape
 					.contact__form__wrap
 						form.contact__form
-							input(required type="text" value="Your Name *")
-							input(required type="email" value="Your E-mail *")
-							input(required type="text" value="Your Message *")
+							input.form__name( required type="text" value="Your Name *")
+							input.form__email(required type="email" value="Your E-mail *")
+							textarea.form__message(required type="text" value="Your Message *")
 
 		script(src="vendor/jquery/jquery-3.1.1.min.js")
 		script(src="vendor/slick-slider/slick.min.js")
