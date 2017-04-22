@@ -148,7 +148,7 @@ body
     .services__block
       background: white
       color: black
-      max-width: 465px
+      max-width: 460px
       width: 100%
       display: flex
       flex-direction: row
@@ -193,9 +193,11 @@ body
       color: #777777
   .clients__wrap
     display: flex
-    flex-direction: row
+    flex-direction: column
     justify-content: space-between
     margin-bottom: 22px
+    @media screen and (min-width: 635px)
+      flex-direction: row
     .clients__avatar
       border: 7px solid #fff
       width: 225px
@@ -229,3 +231,67 @@ body
       .block__name
         font-size: 16px
         color: #7690c5
+
+.logos__block
+  background: #fff
+  display: block
+  padding: 55px 0
+  .logos__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+    .logos__item
+      height: auto
+      width: 180px
+
+.team
+  background: #000
+  color: #fff
+  .team__title__block
+    text-align: center
+    .block__title
+      font-size: 54px
+      font-weight: 300
+      &::after
+        content: ' Team'
+        font-weight: 700
+    .block__text
+      font-size: 20px
+      color: #777777
+  .team__wrap
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    .team__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      padding: 0 22px
+      .item__avatar
+        width: 225px
+        height: 225px
+        border: 7px solid #ffffff
+        border-radius: 50%
+      .item__name
+        font-weight: 600
+        font-size: 14px
+      .social__wrap
+        flex-direction: row
+        display: flex
+        justify-content: center
+        .social__icon
+          display: inline-block
+          width: 34px
+          height: 34px
+          border-radius: 50%
+          background: transparent
+          border: 3px solid #ffffff
+          margin: 0 5px
+  .team__text
+    text-align: center
+    font-size: 16px
+    padding: 0 150px
+    box-sizing: border-box

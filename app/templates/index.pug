@@ -4,6 +4,7 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
 		link(rel="stylesheet", href="css/reset.css")
 		link(rel="stylesheet", href="vendor/bootstrap/bootstrap.css")
 		link(rel="stylesheet", href="vendor/slick-slider/slick.css")
@@ -38,38 +39,37 @@ html(lang="en")
 						a.item__btn(href="#") Learn More
 		section#services.services
 			.container
-				.row
-					.services__wrap
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title Branding & Identity
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title Web & Graphic Design
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title Mobile App Development
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title Animations
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title UI/UX
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
-						.services__block
-							a.block__icon(href="#")
-							.text__block
-								h5.block__title Photography
-								p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+				.services__wrap
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title Branding & Identity
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title Web & Graphic Design
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title Mobile App Development
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title Animations
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title UI/UX
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
+					.services__block
+						a.block__icon(href="#")
+						.text__block
+							h5.block__title Photography
+							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
 
 		section#clients.clients
 			.container
@@ -86,9 +86,47 @@ html(lang="en")
 						p.block__text “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
 						a.block__name(href="#") - Bart Thompson, Founder of Rainel
 					img.clients__avatar(src="uploads/client_icon_2.jpg", alt="client" width="225" height="225")
+		.logos__block
+			.container
+				.logos__wrap
+					img.logos__item(src="uploads/logos_1.jpg", alt="envato-logo" width="160" height="250")
+					img.logos__item(src="uploads/logos_2.jpg", alt="wordpress-logo" width="160" height="250")
+					img.logos__item(src="uploads/logos_3.jpg", alt="ae-tuts-logo" width="160" height="250")
+					img.logos__item(src="uploads/logos_4.jpg", alt="microlancer-logo" width="160" height="250")
+
 
 		section#team.team
 			.container
+				.team__title__block
+					.block__title Amazing
+					.block__text These wonderful people make work enjoyable.
+
+				.team__wrap
+					.team__item
+						img.item__avatar(src="uploads/team_avatar_1.jpg", alt="ae-tuts-logo" width="225" height="225")
+						h5.item__name Kimberly Thompson
+						p.item__profesh Marketer
+						.social__wrap
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+					.team__item
+						img.item__avatar(src="uploads/team_avatar_2.jpg", alt="ae-tuts-logo" width="225" height="225")
+						h5.item__name Kimberly Thompson
+						p.item__profesh Marketer
+						.social__wrap
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+					.team__item
+						img.item__avatar(src="uploads/team_avatar_3.jpg", alt="ae-tuts-logo" width="225" height="225")
+						h5.item__name Kimberly Thompson
+						p.item__profesh Marketer
+						.social__wrap
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+							a.social__icon(href="#")
+				p.team__text Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.
 		section#contact.contact
 			.container
 		script(src="vendor/jquery/jquery-3.1.1.min.js")
