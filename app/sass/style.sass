@@ -1,5 +1,10 @@
+@import mixins
 
-$icons: 'people', 'web', 'mobile', 'camera', 'star', 'photo'
+$icons: ('brand': '\f183', 'web': '\f2d0', 'mobile': '\f10a', 'animate': '\f03d', 'ui': '\f005', 'photo': '\f030',)
+
+@each $iconName, $iconNumber in $icons
+    .icon--#{$iconName}
+      +icon($iconNumber)
 
 
 
@@ -17,6 +22,7 @@ body
   position: relative
   padding: 0 10px
   box-sizing: border-box
+
 .header
   background: transparent
   padding: 40px 0
@@ -139,7 +145,7 @@ body
 .services
   display: block
   background: #ffffff
-  padding: 87px 0 50px
+  padding: 7% 0 3%
   .services__wrap
     display: flex
     flex-direction: row
@@ -164,7 +170,46 @@ body
         height: 70px
         background-color: black
         float: left
-
+        position: relative
+        color: white
+        font-size: 16px
+      //.icon--brand
+      //  +icon('\f183')
+      //.icon--web
+      //  &::after
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    content: '\f2d0'
+      //    font-family: FontAwesome
+      //.icon--mobile
+      //  &::after
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    content: '\f183'
+      //    font-family: FontAwesome
+      //.icon--animate
+      //  &::after
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    content: '\f183'
+      //    font-family: FontAwesome
+      //.icon--ui
+      //  &::after
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    content: '\f183'
+      //    font-family: FontAwesome
+      //.icon--photo
+      //  &::after
+      //    position: absolute
+      //    left: 0
+      //    top: 0
+      //    content: '\f183'
+      //    font-family: FontAwesome
       .text__block
         float: right
         max-width: 320px
@@ -179,7 +224,7 @@ body
 
 .clients
   background: #fafafa
-  padding: 100px 0 80px
+  padding: 6.5% 0 5%
   .clients__title__block
     text-align: center
     .block__title
@@ -203,26 +248,29 @@ body
       width: 225px
       height: 225px
       border-radius: 50%
-
+    .text__block--left
+      &::before
+        +triangle
+        left: 22px
+        @media screen and (min-width: 634px)
+          left: -22px
+    .text__block--right
+      &::after
+        +triangle
+        right: 22px
+        transform: rotate(180deg)
+        @media screen and (min-width: 634px)
+          right: -22px
     .clients__text__block
       background: white
       border: 2px solid #f3f3f3
       border-radius: 2px
       max-width: 655px
       width: 100%
-      padding: 40px 80px
+      padding: 6% 9%
       box-sizing: border-box
       margin-top: 22px
       position: relative
-      &::before
-        position: absolute
-        left: -2px
-        top: 48%
-        width: 0
-        height: 0
-        border-style: solid
-        border-width: 13.5px 25px 13.5px 0
-        border-color: transparent #ffffff transparent transparent
       .block__text
         color: #777777
         font-size: 20px
@@ -231,6 +279,7 @@ body
       .block__name
         font-size: 16px
         color: #7690c5
+
 
 .logos__block
   background: #fff
@@ -250,6 +299,7 @@ body
       .item__picture
         height: auto
         width: auto
+
 
 .team
   background: #000
@@ -283,9 +333,13 @@ body
         border: 7px solid #ffffff
         border-radius: 50%
         margin: 75px 0 20px
+        transition: all 0.6s ease-out
+        &:hover
+          border-color: rgba(224, 149, 32, 1)
       .item__name
         font-weight: 600
         font-size: 14px
+        transition: all 0.6s ease-out
       .social__wrap
         flex-direction: row
         display: flex
@@ -317,6 +371,7 @@ body
     margin-top: 45px
     @media screen and (min-width: 600px)
       padding: 0 150px
+
 
 .contact
   background: #7690c5

@@ -1,0 +1,26 @@
+%iconSet
+  &::after
+    position: absolute
+    left: 17px
+    top: 12px
+    font-family: FontAwesome
+    font-size: 37px
+    color: #ffffff
+=icon($contentIcon)
+  &::after
+    @extend %iconSet
+    content: $contentIcon
+
+%triangleSet
+  content: ''
+  position: absolute
+  top: 44%
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 13px 25px 13px 0
+  border-color: transparent white transparent transparent
+
+=triangle
+  @extend %triangleSet
+
