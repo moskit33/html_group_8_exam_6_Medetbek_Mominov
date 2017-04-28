@@ -24,3 +24,11 @@
 =triangle
   @extend %triangleSet
 
+$icons: ('brand': '\f183', 'web': '\f2d0', 'mobile': '\f10a', 'animate': '\f03d', 'ui': '\f005', 'photo': '\f030',)
+
+@each $iconName, $iconNumber in $icons
+  .icon--#{$iconName}
+    +icon($iconNumber)
+
+
+

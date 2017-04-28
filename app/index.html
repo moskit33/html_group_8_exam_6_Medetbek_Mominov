@@ -188,9 +188,10 @@
                 </div>
                 <div class="contact__form__wrap">
                     <form class="contact__form">
-                        <input class="form__name" required type="text" value="Your Name *">
-                        <input class="form__email" required type="email" value="Your E-mail *">
-                        <textarea class="form__message" required type="text" value="Your Message *"></textarea>
+                        <input class="form__name" required type="text" placeholder="Your Name *" minlength="1" maxlength="100">
+                        <input class="form__email" required minlength="4" maxlength="50" type="email" placeholder="Your E-mail *">
+                        <textarea class="form__message" required type="text" placeholder="Your Message *" minlength="5" maxlength="100"></textarea>
+                        <!--input.form__btn()-->
                     </form>
                 </div>
             </div>

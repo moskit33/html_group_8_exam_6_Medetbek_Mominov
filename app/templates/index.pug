@@ -30,6 +30,7 @@ html(lang="en")
 							a.item__a(href="#team") Team
 						li.list__item
 							a.item__a(href="#contact") Contact
+
 		section#home.promo
 			.container
 				.promo__slider
@@ -37,6 +38,7 @@ html(lang="en")
 						h4.item__title--little Can you build the website of my dreams?
 						h2.item__title--main Yup, we can do that.
 						a.item__btn(href="#") Learn More
+
 		section#services.services
 			.container
 				.services__wrap
@@ -71,6 +73,7 @@ html(lang="en")
 							h5.block__title Photography
 							p.block__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid distinctio eligendi eos facilis molestiae
 
+
 		section#clients.clients
 			.container
 				.clients__title__block
@@ -86,6 +89,7 @@ html(lang="en")
 						p.block__text “ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”
 						a.block__name(href="#") - Bart Thompson, Founder of Rainel
 					img.clients__avatar.img-responsive(src="uploads/client_icon_2.jpg", alt="client" width="225" height="225")
+
 		.logos__block
 			.container
 				.logos__wrap
@@ -97,6 +101,7 @@ html(lang="en")
 						img.item__picture(src="uploads/logos_3.jpg", alt="ae-tuts-logo" width="131" height="41")
 					a.logos__item(href="#")
 						img.item__picture(src="uploads/logos_4.jpg", alt="microlancer-logo" width="167" height="42")
+
 
 		section#team.team
 			.container
@@ -137,6 +142,7 @@ html(lang="en")
 							a.social__icon(href="#")
 								i.icon__item.fa.fa-pinterest-p(aria-hidden="true")
 				p.team__text Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.
+
 		section#contact.contact
 			.container
 				.contact__wrap
@@ -154,9 +160,11 @@ html(lang="en")
 							li.info__item pinterest.com/escape
 					.contact__form__wrap
 						form.contact__form
-							input.form__name( required type="text" value="Your Name *")
-							input.form__email(required type="email" value="Your E-mail *")
-							textarea.form__message(required type="text" value="Your Message *")
+							input.form__name( required type="text" placeholder="Your Name *" minlength=1 maxlength=100)
+							input.form__email(required minlength=4 maxlength=50 type="email" placeholder="Your E-mail *")
+							textarea.form__message(required type="text" placeholder="Your Message *" minlength=5 maxlength=100)
+							//input.form__btn()
+
 
 		script(src="vendor/jquery/jquery-3.1.1.min.js")
 		script(src="vendor/slick-slider/slick.min.js")

@@ -1,20 +1,13 @@
 @import mixins
 
-$icons: ('brand': '\f183', 'web': '\f2d0', 'mobile': '\f10a', 'animate': '\f03d', 'ui': '\f005', 'photo': '\f030',)
-
-@each $iconName, $iconNumber in $icons
-    .icon--#{$iconName}
-      +icon($iconNumber)
-
-
-
 body
   font-family: 'Open Sans', helvetica, sans-serif
-  font-size: 14px
+  font-size: 12px
   color: #000
   background: #fff
   line-height: 1.3
-
+  @media screen and (min-width: 480px)
+    font-size: 14px
 .container
   max-width: 940px
   width: 100%
@@ -34,7 +27,7 @@ body
   .header__logo
     display: inline-block
     color: white
-    font-size: 25px
+    font-size: 1.78em
     img
       display: block
       width: 140px
@@ -67,7 +60,7 @@ body
       position: absolute
       right: -9px
       top: 36px
-
+      transition: all 0.3s ease-out
       &:hover
         display: block
       @media screen and (min-width: 720px)
@@ -79,7 +72,7 @@ body
         background: transparent
       .list__item
         display: block
-        font-size: 20px
+        font-size: 1.42em
         border: 2px solid white
         background: #29606b
         border-bottom: none
@@ -98,7 +91,7 @@ body
           background: #4db5ca
         @media screen and (min-width: 720px)
           display: inline-block
-          font-size: 17px
+          font-size: 1.21em
           border: none
           background: transparent
           &:hover
@@ -119,16 +112,18 @@ body
         display: block
         font-weight: 300
         margin-bottom: 23px
-        font-size: 28px
+        font-size: 2em
       .item__title--main
         display: block
         font-weight: 700
-        font-size: 66px
+        font-size: 2.71em
         text-transform: uppercase
         margin-bottom: 66px
+        @media screen and (min-width: 505px)
+          font-size: 4.71em
       .item__btn
         display: inline-block
-        font-size: 20px
+        font-size: 1.42em
         border: 2px solid white
         border-radius: 3px
         background: transparent
@@ -139,7 +134,7 @@ body
         &:hover
           background: rgba(224, 149, 32, 0.73)
           padding: 17px 68px
-          font-size: 24px
+          font-size: 1.71em
 
 
 .services
@@ -150,19 +145,21 @@ body
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-between
+    justify-content: space-around
+    //@media screen and (min-width: 837px)
+    //  justify-content: space-between
     .services__block
       background: white
       color: black
-      max-width: 460px
+      max-width: 405px
       width: 100%
       display: flex
       flex-direction: row
       justify-content: space-between
       margin-bottom: 60px
       padding-left: 0
-      @media screen and (min-width: 720px)
-        padding-left: 55px
+      //@media screen and (min-width: 720px)
+      //  padding-left: 6%
       .block__icon
         display: block
         border-radius: 50%
@@ -172,54 +169,32 @@ body
         float: left
         position: relative
         color: white
-        font-size: 16px
-      //.icon--brand
-      //  +icon('\f183')
-      //.icon--web
-      //  &::after
-      //    position: absolute
-      //    left: 0
-      //    top: 0
-      //    content: '\f2d0'
-      //    font-family: FontAwesome
-      //.icon--mobile
-      //  &::after
-      //    position: absolute
-      //    left: 0
-      //    top: 0
-      //    content: '\f183'
-      //    font-family: FontAwesome
-      //.icon--animate
-      //  &::after
-      //    position: absolute
-      //    left: 0
-      //    top: 0
-      //    content: '\f183'
-      //    font-family: FontAwesome
-      //.icon--ui
-      //  &::after
-      //    position: absolute
-      //    left: 0
-      //    top: 0
-      //    content: '\f183'
-      //    font-family: FontAwesome
-      //.icon--photo
-      //  &::after
-      //    position: absolute
-      //    left: 0
-      //    top: 0
-      //    content: '\f183'
-      //    font-family: FontAwesome
+        font-size: 1.14em
+        &:hover
+          &::after
+            transition: all 0.4s ease-out
+            color: rgb(224, 149, 32)
+            transform: scale(0.8)
+
+
+      .icon--brand
+        &::after
+          left: 25px
+      .icon--mobile
+        &::after
+          left: 24px
       .text__block
         float: right
-        max-width: 320px
+        max-width: 220px
         width: 100%
+        @media screen and (min-width: 440px)
+          max-width: 320px
         .block__title
-          font-size: 20px
+          font-size: 1.42em
           display: inline-block
           font-weight: 600
         .block__p
-          font-size: 16px
+          font-size: 1.14em
           display: inline-block
 
 .clients
@@ -228,13 +203,13 @@ body
   .clients__title__block
     text-align: center
     .block__title
-      font-size: 54px
+      font-size: 3.85em
       font-weight: 300
       &::after
         content: ' Clients'
         font-weight: 700
     .block__text
-      font-size: 20px
+      font-size: 1.42em
       color: #777777
   .clients__wrap
     display: flex
@@ -248,6 +223,9 @@ body
       width: 225px
       height: 225px
       border-radius: 50%
+      transition: all 0.4s ease-out
+      &:hover
+        border-color: rgba(224, 149, 32, 1)
     .text__block--left
       &::before
         +triangle
@@ -273,11 +251,11 @@ body
       position: relative
       .block__text
         color: #777777
-        font-size: 20px
+        font-size: 1.42em
         line-height: 1.5
         margin-bottom: 12px
       .block__name
-        font-size: 16px
+        font-size: 1.14em
         color: #7690c5
 
 
@@ -308,13 +286,13 @@ body
   .team__title__block
     text-align: center
     .block__title
-      font-size: 54px
+      font-size: 3.85em
       font-weight: 300
       &::after
         content: ' Team'
         font-weight: 700
     .block__text
-      font-size: 20px
+      font-size: 1.42em
       color: #777777
   .team__wrap
     display: flex
@@ -333,13 +311,13 @@ body
         border: 7px solid #ffffff
         border-radius: 50%
         margin: 75px 0 20px
-        transition: all 0.6s ease-out
+        transition: all 0.4s ease-out
         &:hover
           border-color: rgba(224, 149, 32, 1)
       .item__name
         font-weight: 600
-        font-size: 14px
-        transition: all 0.6s ease-out
+        font-size: 1em
+        transition: all 0.4s ease-out
       .social__wrap
         flex-direction: row
         display: flex
@@ -353,19 +331,19 @@ body
           border: 3px solid #ffffff
           margin: 0 5px
           position: relative
-          transition: all 0.3s ease-out
+          transition: all 0.4s ease-out
           margin-top: 10px
           &:hover
             background: rgba(224, 149, 32, 1)
           .icon__item
-            font-size: 18px
+            font-size: 1.28em
             position: absolute
             top: 24%
             left: 28%
             color: #fff
   .team__text
     text-align: center
-    font-size: 16px
+    font-size: 1.14em
     padding: 0
     box-sizing: border-box
     margin-top: 45px
@@ -390,17 +368,16 @@ body
         text-align: left
         .block__title
           font-weight: 300
-          font-size: 54px
+          font-size: 3.85em
           &::after
             content: ' Hello'
             font-weight: 700
-
       .info
         width: 50%
         max-width: 50%
         .info__item
           display: block
-          font-size: 16px
+          font-size: 1.14em
     .contact__form__wrap
       width: 100%
       max-width: 470px
@@ -408,7 +385,7 @@ body
         display: flex
         flex-direction: column
         flex-wrap: wrap
-        font-size: 16px
+        font-size: 1.14em
         .form__name, .form__email, .form__message
           width: 100%
           max-width: 455px
