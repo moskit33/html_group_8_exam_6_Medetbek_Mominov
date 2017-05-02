@@ -337,14 +337,6 @@ body
     }
 }
 
-@media screen and (min-width: 980px)
-{
-    .promo .promo__slider .slider__item .text__wrap
-    {
-        top: 35vh;
-    }
-}
-
 .promo .promo__slider .slider__item .text__wrap .item__title--little
 {
     font-size: 2em;
