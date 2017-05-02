@@ -8,7 +8,12 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1000);
     });
 
+    $('.promo__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300
 
+    });
 
 
 
